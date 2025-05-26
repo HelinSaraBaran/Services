@@ -33,5 +33,11 @@ namespace Service
         {
             _repository.SaveAll(visits);
         }
+
+        // Sletter en booking via ID
+        public void DeleteBooking(int id)
+        {
+            _repository.Delete(id);
+        }
     }
 }
